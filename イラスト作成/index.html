@@ -1,0 +1,4625 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  >
+
+  <meta
+    name="description"
+    content="ONE イラスト制作依頼フォーム"
+  >
+
+  <title>Illustration Order | ONE</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+
+<body>
+
+<!-- =====================================================
+     MOBILE HEADER
+===================================================== -->
+
+<header class="mobile-header">
+
+  <button
+    type="button"
+    class="mobile-logo"
+    data-home-link
+    aria-label="トップへ戻る"
+  >
+    ✦
+  </button>
+
+  <div class="mobile-header-copy">
+
+    <small id="mobileProgressText">
+      START
+    </small>
+
+    <strong id="mobileCurrentTitle">
+      はじめる
+    </strong>
+
+  </div>
+
+  <span
+    class="mobile-progress-number"
+    id="mobileProgressNumber"
+  >
+    0%
+  </span>
+
+</header>
+
+
+<div class="mobile-progress-track">
+  <span id="mobileProgressBar"></span>
+</div>
+
+
+<nav
+  class="mobile-category-nav"
+  id="mobileCategoryNav"
+  aria-label="入力ステップ"
+></nav>
+
+
+
+<!-- =====================================================
+     APP
+===================================================== -->
+
+<div class="order-app">
+
+
+  <!-- =================================================
+       PC SIDEBAR
+  ================================================== -->
+
+  <aside class="order-sidebar">
+
+    <div class="sidebar-brand">
+
+      <span class="sidebar-symbol">
+        ✦
+      </span>
+
+      <p class="eyebrow">
+        ILLUSTRATION COMMISSION
+      </p>
+
+      <h1>
+        Character<br>
+        Order.
+      </h1>
+
+      <p class="sidebar-description">
+        好きなものを選びながら、<br>
+        あなただけのキャラクターを。
+      </p>
+
+    </div>
+
+
+    <nav
+      class="category-navigation"
+      id="categoryNavigation"
+      aria-label="入力カテゴリー"
+    ></nav>
+
+
+    <div class="sidebar-progress">
+
+      <div class="sidebar-progress-head">
+
+        <span>PROGRESS</span>
+
+        <strong id="progressPercent">
+          0%
+        </strong>
+
+      </div>
+
+      <div class="progress-track">
+
+        <span
+          class="progress-bar"
+          id="progressBar"
+        ></span>
+
+      </div>
+
+    </div>
+
+  </aside>
+
+
+
+  <!-- =================================================
+       MAIN
+  ================================================== -->
+
+  <main class="order-main">
+
+    <form
+      id="characterForm"
+      autocomplete="off"
+    >
+
+
+      <!-- =================================================
+           HOME
+      ================================================== -->
+
+      <section
+        class="order-screen home-screen active"
+        id="homeScreen"
+      >
+
+        <div class="home-hero">
+
+          <p class="eyebrow">
+            ILLUSTRATION COMMISSION
+          </p>
+
+          <h2>
+            理想のキャラクターを、 <em>一緒につくる。</em>
+          </h2>
+
+          <p class="home-description">
+            ONE所属ライバー向けの
+            イラスト制作依頼フォームです。
+            決まっていない部分は
+            おまかせでも大丈夫です。
+          </p>
+
+
+          <div class="home-meta">
+
+            <span>
+              <b>✦</b>
+              スマホ対応
+            </span>
+
+            <span>
+              <b>♡</b>
+              画像資料OK
+            </span>
+
+            <span>
+              <b>◷</b>
+              後から確認OK
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="route-section">
+
+          <div class="section-intro">
+
+            <span class="section-index">
+              SELECT
+            </span>
+
+            <div>
+
+              <h3>
+                どの依頼から始めますか？
+              </h3>
+
+              <p>
+                キャラクターの状態に合わせて
+                選んでください。
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="route-grid">
+<button type="button" class="route-card" data-start-route="emote">
+<span class="route-number">03</span><span class="route-icon">☺</span>
+<span class="route-copy"><small>PAID EMOTE</small><strong>有償エモート制作</strong><span>5個1,000円から／背景透過PNG</span></span><span class="route-arrow">→</span></button>
+
+            <button
+              type="button"
+              class="route-card route-card-main"
+              data-start-route="new"
+            >
+
+              <span class="route-number">
+                01
+              </span>
+
+              <span class="route-icon">
+                ✦
+              </span>
+
+              <span class="route-copy">
+
+                <small>
+                  NEW CHARACTER
+                </small>
+
+                <strong>
+                  新規キャラクター
+                </strong>
+
+                <span>
+                  キャラクターデザインから
+                  一緒に制作
+                </span>
+
+              </span>
+
+              <span class="route-arrow">
+                →
+              </span>
+
+            </button>
+
+
+
+            <button
+              type="button"
+              class="route-card"
+              data-start-route="existing"
+            >
+
+              <span class="route-number">
+                02
+              </span>
+
+              <span class="route-icon">
+                ♡
+              </span>
+
+              <span class="route-copy">
+
+                <small>
+                  EXISTING CHARACTER
+                </small>
+
+                <strong>
+                  既存キャラクター
+                </strong>
+
+                <span>
+                  すでにデザインが
+                  決まっているキャラクター
+                </span>
+
+              </span>
+
+              <span class="route-arrow">
+                →
+              </span>
+
+            </button>
+
+          </div>
+
+
+
+          <button
+            type="button"
+            class="lookup-link"
+            id="openLookupButton"
+          >
+
+            <span>⌕</span>
+
+            <span>
+
+              <strong>
+                依頼内容を確認
+              </strong>
+
+              <small>
+                受付コードから以前の依頼を見る
+              </small>
+
+            </span>
+
+            <b>→</b>
+
+          </button>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           01 REQUESTER
+      ================================================== -->
+
+      <section
+        class="order-screen category-screen"
+        data-category="requester"
+        id="requesterScreen"
+      >
+
+        <header class="page-heading page-heading-number">
+
+          <span class="giant-number">
+            01
+          </span>
+
+          <div>
+
+            <span class="page-kicker">
+              ABOUT YOU
+            </span>
+
+            <h2>
+              まずは、あなたのこと。
+            </h2>
+
+            <p>
+              ご依頼の確認・連絡に使用します。
+            </p>
+
+          </div>
+
+        </header>
+
+
+
+        <section class="question-section">
+
+          <div class="line-field">
+
+            <label for="requesterName">
+
+              <span>
+                活動名
+              </span>
+
+              <small class="required">
+                REQUIRED
+              </small>
+
+            </label>
+
+            <input
+              type="text"
+              id="requesterName"
+              name="requesterName"
+              placeholder="例：汐音るな"
+            >
+
+          </div>
+
+
+
+          <div class="line-field">
+
+            <label for="discordName">
+
+              <span>
+                Discord名
+              </span>
+
+              <small class="required">
+                REQUIRED
+              </small>
+
+            </label>
+
+            <input
+              type="text"
+              id="discordName"
+              name="discordName"
+              placeholder="Discordで使用している名前"
+            >
+
+          </div>
+
+        </section>
+
+
+
+        <!-- HEARING -->
+
+        <section class="question-section question-featured">
+
+          <div class="question-title">
+
+            <small>
+              HEARING
+            </small>
+
+            <h3>
+              制作前ヒアリング
+            </h3>
+
+            <p>
+              制作前に相談・打ち合わせを
+              希望するか選んでください。
+            </p>
+
+          </div>
+
+
+          <div class="feature-choice-grid feature-choice-grid-2">
+
+            <label class="feature-choice">
+
+              <input
+                type="radio"
+                name="hearing"
+                value="希望する"
+              >
+
+              <span class="feature-choice-icon">
+                ♡
+              </span>
+
+              <strong>
+                希望する
+              </strong>
+
+              <small>
+                MEETING
+              </small>
+
+            </label>
+
+
+            <label class="feature-choice">
+
+              <input
+                type="radio"
+                name="hearing"
+                value="希望しない"
+              >
+
+              <span class="feature-choice-icon">
+                →
+              </span>
+
+              <strong>
+                希望しない
+              </strong>
+
+              <small>
+                NO MEETING
+              </small>
+
+            </label>
+
+          </div>
+
+
+          <p class="field-note">
+            「希望する」を選んだ場合も、
+            このフォームは最後まで入力してください。
+          </p>
+
+        </section>
+
+
+        <div class="category-footer"></div>
+
+      </section>
+
+            <!-- =================================================
+           02 REQUEST
+      ================================================== -->
+
+      <section
+        class="order-screen category-screen"
+        data-category="request"
+        id="requestScreen"
+      >
+
+        <header class="page-heading page-heading-number">
+
+          <span class="giant-number">
+            02
+          </span>
+
+          <div>
+            <span class="page-kicker">
+              REQUEST
+            </span>
+
+            <h2>
+              何をつくる？
+            </h2>
+
+            <p>
+              今回依頼したいものを選んでください。<br>
+              複数選択できます。
+            </p>
+          </div>
+
+        </header>
+
+
+        <!-- =========================
+             NEW REQUEST
+        ========================== -->
+
+        <section
+          class="question-section route-only"
+          data-route-display="new"
+          id="newRequestTypes"
+        >
+
+          <div class="question-title">
+            <small>
+              TYPE
+            </small>
+
+            <h3>
+              制作内容
+            </h3>
+
+            <p>
+              当てはまるものをすべて選択してください。
+            </p>
+          </div>
+
+
+          <div class="choice-grid choice-grid-2">
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="初回イラスト"
+              >
+              <span>
+                <b>✦</b>
+                <strong>初回イラスト</strong>
+                <small>FIRST VISUAL</small>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="アイコン"
+              >
+              <span>
+                <b>◉</b>
+                <strong>アイコン</strong>
+                <small>ICON</small>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="サムネイル"
+              >
+              <span>
+                <b>▣</b>
+                <strong>サムネイル</strong>
+                <small>THUMBNAIL</small>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="配信用イラスト"
+              >
+              <span>
+                <b>▶</b>
+                <strong>配信用イラスト</strong>
+                <small>STREAM</small>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="イベント・企画用"
+              >
+              <span>
+                <b>★</b>
+                <strong>イベント・企画用</strong>
+                <small>EVENT</small>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="グッズ用"
+              >
+              <span>
+                <b>♡</b>
+                <strong>グッズ用</strong>
+                <small>GOODS</small>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="その他"
+              >
+              <span>
+                <b>＋</b>
+                <strong>その他</strong>
+                <small>OTHER</small>
+              </span>
+            </label>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             EXISTING REQUEST
+        ========================== -->
+
+        <section
+          class="question-section route-only"
+          data-route-display="existing"
+          id="existingRequestTypes"
+        >
+
+          <div class="question-title">
+            <small>
+              TYPE
+            </small>
+
+            <h3>
+              制作内容
+            </h3>
+
+            <p>
+              当てはまるものをすべて選択してください。
+            </p>
+          </div>
+
+
+          <div class="choice-grid choice-grid-2">
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="衣装変更・新衣装"
+              >
+              <span>
+                <b>✦</b>
+                <strong>衣装変更・新衣装</strong>
+                <small>NEW OUTFIT</small>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="アイコン"
+              >
+              <span>
+                <b>◉</b>
+                <strong>アイコン</strong>
+                <small>ICON</small>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="サムネイル"
+              >
+              <span>
+                <b>▣</b>
+                <strong>サムネイル</strong>
+                <small>THUMBNAIL</small>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="配信用イラスト"
+              >
+              <span>
+                <b>▶</b>
+                <strong>配信用イラスト</strong>
+                <small>STREAM</small>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="イベント・企画用"
+              >
+              <span>
+                <b>★</b>
+                <strong>イベント・企画用</strong>
+                <small>EVENT</small>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="グッズ用"
+              >
+              <span>
+                <b>♡</b>
+                <strong>グッズ用</strong>
+                <small>GOODS</small>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="checkbox"
+                name="requestType"
+                value="その他"
+              >
+              <span>
+                <b>＋</b>
+                <strong>その他</strong>
+                <small>OTHER</small>
+              </span>
+            </label>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             EVENT QUESTIONS
+        ========================== -->
+
+        <section
+          class="conditional-panel"
+          id="eventQuestions"
+          hidden
+        >
+
+          <div class="question-title">
+            <small>
+              EVENT
+            </small>
+
+            <h3>
+              何のイベント・企画？
+            </h3>
+
+            <p>
+              当てはまるものを選んでください。<br>
+              複数選択できます。
+            </p>
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input
+                type="checkbox"
+                name="eventType"
+                value="誕生日"
+              >
+              <span>誕生日</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="eventType"
+                value="活動記念"
+              >
+              <span>活動記念</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="eventType"
+                value="デビュー・周年"
+              >
+              <span>デビュー・周年</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="eventType"
+                value="季節イベント"
+              >
+              <span>季節イベント</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="eventType"
+                value="歌・音楽"
+              >
+              <span>歌・音楽</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="eventType"
+                value="ゲーム企画"
+              >
+              <span>ゲーム企画</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="eventType"
+                value="コラボ"
+              >
+              <span>コラボ</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="eventType"
+                value="グッズ"
+              >
+              <span>グッズ</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="eventType"
+                value="その他"
+              >
+              <span>その他</span>
+            </label>
+
+          </div>
+
+
+          <div class="line-field conditional-text-field">
+
+            <label for="eventName">
+              <span>
+                イベント名・企画名
+              </span>
+
+              <small>
+                OPTIONAL
+              </small>
+            </label>
+
+            <input
+              type="text"
+              id="eventName"
+              name="eventName"
+              placeholder="決まっている場合のみ入力"
+            >
+
+          </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             OTHER REQUEST
+        ========================== -->
+
+        <section
+          class="conditional-panel"
+          id="otherRequestPanel"
+          hidden
+        >
+
+          <div class="line-field">
+
+            <label for="otherRequest">
+              <span>
+                その他の制作内容
+              </span>
+            </label>
+
+            <textarea
+              id="otherRequest"
+              name="otherRequest"
+              rows="4"
+              placeholder="作りたいものを自由に入力してください"
+            ></textarea>
+
+          </div>
+
+        </section>
+
+
+        <div class="category-footer"></div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           03 CHARACTER / NEW
+      ================================================== -->
+
+      <section
+        class="order-screen category-screen"
+        data-category="character"
+        data-route-only="new"
+        id="newCharacterScreen"
+      >
+
+        <header class="page-heading page-heading-number">
+
+          <span class="giant-number">
+            03
+          </span>
+
+          <div>
+            <span class="page-kicker">
+              CHARACTER
+            </span>
+
+            <h2>
+              どんな子にする？
+            </h2>
+
+            <p>
+              キャラクターの基本設定を
+              決めていきます。
+            </p>
+          </div>
+
+        </header>
+
+
+
+        <!-- CHARACTER TYPE -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+            <small>
+              TYPE
+            </small>
+
+            <h3>
+              キャラクタータイプ
+            </h3>
+          </div>
+
+
+          <div class="choice-grid choice-grid-2">
+
+            <label class="choice-card">
+              <input
+                type="radio"
+                name="characterType"
+                value="人間"
+              >
+              <span>
+                <b>01</b>
+                <strong>人間</strong>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="radio"
+                name="characterType"
+                value="ケモ耳・尻尾"
+              >
+              <span>
+                <b>02</b>
+                <strong>ケモ耳・尻尾</strong>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="radio"
+                name="characterType"
+                value="獣人"
+              >
+              <span>
+                <b>03</b>
+                <strong>獣人</strong>
+              </span>
+            </label>
+
+
+            <label class="choice-card">
+              <input
+                type="radio"
+                name="characterType"
+                value="その他"
+              >
+              <span>
+                <b>04</b>
+                <strong>その他</strong>
+              </span>
+            </label>
+
+          </div>
+
+
+          <div
+            class="conditional-panel"
+            id="otherCharacterTypePanel"
+            hidden
+          >
+
+            <div class="line-field">
+
+              <label for="otherCharacterType">
+                <span>
+                  どんなキャラクター？
+                </span>
+              </label>
+
+              <input
+                type="text"
+                id="otherCharacterType"
+                name="otherCharacterType"
+                placeholder="自由に入力してください"
+              >
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- ANIMAL MOTIF -->
+
+        <section
+          class="question-section conditional-panel"
+          id="animalQuestions"
+          hidden
+        >
+
+          <div class="question-title">
+            <small>
+              ANIMAL
+            </small>
+
+            <h3>
+              動物モチーフ
+            </h3>
+
+            <p>
+              入れたい動物を選んでください。<br>
+              複数選択できます。
+            </p>
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="猫">
+              <span>猫</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="犬">
+              <span>犬</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="狐">
+              <span>狐</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="狼">
+              <span>狼</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="うさぎ">
+              <span>うさぎ</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="たぬき">
+              <span>たぬき</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="鹿">
+              <span>鹿</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="羊">
+              <span>羊</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="山羊">
+              <span>山羊</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="牛">
+              <span>牛</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="馬">
+              <span>馬</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="ライオン">
+              <span>ライオン</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="トラ">
+              <span>トラ</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="クマ">
+              <span>クマ</span>
+            </label>
+
+            <label>
+              <input type="checkbox" name="animalMotif" value="その他">
+              <span>その他</span>
+            </label>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- BEAST LEVEL -->
+
+        <section
+          class="question-section conditional-panel"
+          id="beastLevelPanel"
+          hidden
+        >
+
+          <div class="question-title">
+            <small>
+              BEAST LEVEL
+            </small>
+
+            <h3>
+              獣人の度合い
+            </h3>
+
+            <p>
+              どのくらい動物らしさを
+              入れたいか選んでください。
+            </p>
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input
+                type="radio"
+                name="beastLevel"
+                value="ほぼ人型"
+              >
+              <span>ほぼ人型</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="beastLevel"
+                value="獣要素多め"
+              >
+              <span>獣要素多め</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="beastLevel"
+                value="しっかり獣人"
+              >
+              <span>しっかり獣人</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="beastLevel"
+                value="おまかせ"
+              >
+              <span>おまかせ</span>
+            </label>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- GENDER -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+            <small>
+              GENDER
+            </small>
+
+            <h3>
+              性別・雰囲気
+            </h3>
+
+            <p>
+              髪型や衣装の表示順にも反映します。<br>
+              選べる内容自体は制限されません。
+            </p>
+          </div>
+
+
+          <div class="feature-choice-grid feature-choice-grid-3">
+
+            <label class="feature-choice">
+
+              <input
+                type="radio"
+                name="gender"
+                value="女"
+              >
+
+              <span class="feature-choice-icon">
+                ♀
+              </span>
+
+              <strong>
+                女の子
+              </strong>
+
+              <small>
+                FEMALE
+              </small>
+
+            </label>
+
+
+            <label class="feature-choice">
+
+              <input
+                type="radio"
+                name="gender"
+                value="男"
+              >
+
+              <span class="feature-choice-icon">
+                ♂
+              </span>
+
+              <strong>
+                男の子
+              </strong>
+
+              <small>
+                MALE
+              </small>
+
+            </label>
+
+
+            <label class="feature-choice">
+
+              <input
+                type="radio"
+                name="gender"
+                value="中性"
+              >
+
+              <span class="feature-choice-icon">
+                ◇
+              </span>
+
+              <strong>
+                中性的
+              </strong>
+
+              <small>
+                NEUTRAL
+              </small>
+
+            </label>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- VISUAL AGE -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+            <small>
+              AGE
+            </small>
+
+            <h3>
+              見た目年齢
+            </h3>
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input type="radio" name="visualAge" value="幼め">
+              <span>幼め</span>
+            </label>
+
+            <label>
+              <input type="radio" name="visualAge" value="少女・少年">
+              <span>少女・少年</span>
+            </label>
+
+            <label>
+              <input type="radio" name="visualAge" value="若い大人">
+              <span>若い大人</span>
+            </label>
+
+            <label>
+              <input type="radio" name="visualAge" value="大人っぽい">
+              <span>大人っぽい</span>
+            </label>
+
+            <label>
+              <input type="radio" name="visualAge" value="年齢不詳">
+              <span>年齢不詳</span>
+            </label>
+
+            <label>
+              <input type="radio" name="visualAge" value="おまかせ">
+              <span>おまかせ</span>
+            </label>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- HEIGHT -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+            <small>
+              HEIGHT
+            </small>
+
+            <h3>
+              身長
+            </h3>
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input type="radio" name="heightType" value="小柄">
+              <span>小柄</span>
+            </label>
+
+            <label>
+              <input type="radio" name="heightType" value="やや小柄">
+              <span>やや小柄</span>
+            </label>
+
+            <label>
+              <input type="radio" name="heightType" value="標準">
+              <span>標準</span>
+            </label>
+
+            <label>
+              <input type="radio" name="heightType" value="やや高め">
+              <span>やや高め</span>
+            </label>
+
+            <label>
+              <input type="radio" name="heightType" value="高身長">
+              <span>高身長</span>
+            </label>
+
+            <label>
+              <input type="radio" name="heightType" value="おまかせ">
+              <span>おまかせ</span>
+            </label>
+
+          </div>
+
+
+          <div class="line-field inline-unit-field">
+
+            <label for="heightCm">
+              <span>
+                指定がある場合
+              </span>
+
+              <small>
+                OPTIONAL
+              </small>
+            </label>
+
+            <div class="unit-input">
+
+              <input
+                type="number"
+                id="heightCm"
+                name="heightCm"
+                inputmode="numeric"
+                min="50"
+                max="250"
+                placeholder="例：165"
+              >
+
+              <span>
+                cm
+              </span>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- BODY -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+            <small>
+              BODY
+            </small>
+
+            <h3>
+              体格
+            </h3>
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input type="radio" name="bodyType" value="華奢">
+              <span>華奢</span>
+            </label>
+
+            <label>
+              <input type="radio" name="bodyType" value="細身">
+              <span>細身</span>
+            </label>
+
+            <label>
+              <input type="radio" name="bodyType" value="標準">
+              <span>標準</span>
+            </label>
+
+            <label>
+              <input type="radio" name="bodyType" value="筋肉質">
+              <span>筋肉質</span>
+            </label>
+
+            <label>
+              <input type="radio" name="bodyType" value="ふっくら">
+              <span>ふっくら</span>
+            </label>
+
+            <label>
+              <input type="radio" name="bodyType" value="おまかせ">
+              <span>おまかせ</span>
+            </label>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- BUST : FEMALE ONLY -->
+
+        <section
+          class="question-section conditional-panel"
+          id="bustSection"
+          hidden
+        >
+
+          <div class="question-title">
+            <small>
+              BUST
+            </small>
+
+            <h3>
+              胸の大きさ
+            </h3>
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input type="radio" name="bust" value="小さめ">
+              <span>小さめ</span>
+            </label>
+
+            <label>
+              <input type="radio" name="bust" value="普通">
+              <span>普通</span>
+            </label>
+
+            <label>
+              <input type="radio" name="bust" value="大きめ">
+              <span>大きめ</span>
+            </label>
+
+            <label>
+              <input type="radio" name="bust" value="かなり大きめ">
+              <span>かなり大きめ</span>
+            </label>
+
+            <label>
+              <input type="radio" name="bust" value="おまかせ">
+              <span>おまかせ</span>
+            </label>
+
+          </div>
+
+        </section>
+
+
+        <div class="category-footer"></div>
+
+      </section>
+
+            <!-- =================================================
+           03 CHARACTER / EXISTING
+      ================================================== -->
+
+      <section
+        class="order-screen category-screen"
+        data-category="character"
+        data-route-only="existing"
+        id="existingCharacterScreen"
+      >
+
+        <header class="page-heading page-heading-number">
+
+          <span class="giant-number">
+            03
+          </span>
+
+          <div>
+            <span class="page-kicker">
+              CHARACTER
+            </span>
+
+            <h2>
+              今のキャラクターを見せて。
+            </h2>
+
+            <p>
+              既存キャラクターの資料をもとに制作します。
+            </p>
+          </div>
+
+        </header>
+
+
+        <section class="question-section">
+
+          <div class="question-title">
+            <small>REFERENCE</small>
+
+            <h3>
+              キャラクター参考画像
+            </h3>
+
+            <p>
+              現在使用している立ち絵・アイコン・設定画などを
+              アップロードしてください。複数選択できます。
+            </p>
+          </div>
+
+
+          <label class="upload-box">
+
+            <input
+              type="file"
+              id="existingCharacterReference"
+              name="existingCharacterReference"
+              accept="image/*"
+              multiple
+            >
+
+            <span class="upload-icon">
+              ＋
+            </span>
+
+            <strong>
+              画像を選択
+            </strong>
+
+            <small>
+              PNG / JPG / WEBP
+            </small>
+
+          </label>
+
+          <div
+            class="upload-preview-grid"
+            data-preview-for="existingCharacterReference"
+          ></div>
+
+        </section>
+
+
+        <section class="question-section">
+
+          <div class="line-field">
+
+            <label for="existingCharacterDetail">
+
+              <span>
+                キャラクターについて補足
+              </span>
+
+              <small>
+                OPTIONAL
+              </small>
+
+            </label>
+
+            <textarea
+              id="existingCharacterDetail"
+              name="existingCharacterDetail"
+              rows="5"
+              placeholder="変えたくない部分、特に大切な特徴などがあれば入力してください"
+            ></textarea>
+
+          </div>
+
+        </section>
+
+
+        <div class="category-footer"></div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           04 HAIR & FACE / NEW
+      ================================================== -->
+
+      <section
+        class="order-screen category-screen"
+        data-category="hair"
+        data-route-only="new"
+        id="hairScreen"
+      >
+
+        <header class="page-heading page-heading-number">
+
+          <span class="giant-number">
+            04
+          </span>
+
+          <div>
+
+            <span class="page-kicker">
+              HAIR & FACE
+            </span>
+
+            <h2>
+              髪と目を決めよう。
+            </h2>
+
+            <p>
+              大まかな系統だけでも大丈夫。<br>
+              細かい部分はおまかせできます。
+            </p>
+
+          </div>
+
+        </header>
+
+
+
+        <!-- =================================================
+             HAIR LENGTH
+        ================================================== -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              HAIR LENGTH
+            </small>
+
+            <h3>
+              髪の長さ
+            </h3>
+
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input
+                type="radio"
+                name="hairLength"
+                value="ベリーショート"
+              >
+              <span>ベリーショート</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="hairLength"
+                value="ショート"
+              >
+              <span>ショート</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="hairLength"
+                value="ミディアム"
+              >
+              <span>ミディアム</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="hairLength"
+                value="セミロング"
+              >
+              <span>セミロング</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="hairLength"
+                value="ロング"
+              >
+              <span>ロング</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="hairLength"
+                value="スーパーロング"
+              >
+              <span>スーパーロング</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="hairLength"
+                value="おまかせ"
+              >
+              <span>おまかせ</span>
+            </label>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             HAIR STYLE
+        ================================================== -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              HAIR STYLE
+            </small>
+
+            <h3>
+              髪型
+            </h3>
+
+            <p>
+              まずは近い系統を選んでください。<br>
+              性別に合わせておすすめ順を変えますが、
+              どの髪型でも選択できます。
+            </p>
+
+          </div>
+
+
+          <!--
+            script.js で生成
+
+            女の子優先：
+            ・ストレート系
+            ・ウェーブ・くせ毛系
+            ・レイヤー・ウルフ系
+            ・ボブ・丸み系
+            ・結び髪・アレンジ系
+            ・その他
+            ・おまかせ
+
+            男の子優先：
+            ・ナチュラル・ストレート系
+            ・マッシュ系
+            ・センターパート・分け目系
+            ・ウルフ・レイヤー系
+            ・アップ・立ち上げ系
+            ・長髪・アレンジ系
+            ・その他
+            ・おまかせ
+          -->
+
+          <div
+            class="category-choice-grid"
+            id="hairCategoryGrid"
+          ></div>
+
+
+          <button
+            type="button"
+            class="secondary-action-button"
+            id="showAllHairButton"
+          >
+            ほかの髪型も見る
+          </button>
+
+
+
+          <!-- HAIR DETAIL -->
+
+          <div
+            class="detail-selector-panel"
+            id="hairStyleDetailPanel"
+            hidden
+          >
+
+            <div class="detail-selector-heading">
+
+              <div>
+
+                <small>
+                  DETAIL
+                </small>
+
+                <h4 id="hairStyleDetailTitle">
+                  髪型の詳細
+                </h4>
+
+              </div>
+
+              <span>
+                詳細は選ばなくてもOK
+              </span>
+
+            </div>
+
+
+            <!--
+              script.js から画像カードを生成。
+              後から画像URLを差し替えられる構造にする。
+            -->
+
+            <div
+              class="visual-detail-grid"
+              id="hairStyleDetailGrid"
+            ></div>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             BANGS
+        ================================================== -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              BANGS
+            </small>
+
+            <h3>
+              前髪
+            </h3>
+
+            <p>
+              系統だけ選んで、
+              細かい形をおまかせすることもできます。
+            </p>
+
+          </div>
+
+
+          <div
+            class="category-choice-grid"
+            id="bangCategoryGrid"
+          ></div>
+
+
+          <button
+            type="button"
+            class="secondary-action-button"
+            id="showAllBangButton"
+          >
+            すべての前髪を見る
+          </button>
+
+
+
+          <div
+            class="detail-selector-panel"
+            id="bangDetailPanel"
+            hidden
+          >
+
+            <div class="detail-selector-heading">
+
+              <div>
+
+                <small>
+                  DETAIL
+                </small>
+
+                <h4 id="bangDetailTitle">
+                  前髪の詳細
+                </h4>
+
+              </div>
+
+              <span>
+                詳細は選ばなくてもOK
+              </span>
+
+            </div>
+
+
+            <div
+              class="visual-detail-grid"
+              id="bangDetailGrid"
+            ></div>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             HAIR COLOR
+        ================================================== -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              HAIR COLOR
+            </small>
+
+            <h3>
+              髪色
+            </h3>
+
+            <p>
+              メインになる髪色を選んでください。
+            </p>
+
+          </div>
+
+
+          <!-- script.js でカラースウォッチ生成 -->
+
+          <div
+            class="color-choice-grid"
+            id="hairColorGrid"
+          ></div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EXTRA HAIR COLOR
+        ================================================== -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              SECOND COLOR
+            </small>
+
+            <h3>
+              追加カラー
+            </h3>
+
+            <p>
+              インナーカラーやメッシュなどを
+              入れたい場合に選んでください。
+            </p>
+
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input
+                type="radio"
+                name="hairExtraType"
+                value="なし"
+              >
+              <span>なし</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="hairExtraType"
+                value="インナーカラー"
+              >
+              <span>インナーカラー</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="hairExtraType"
+                value="メッシュ・ハイライト"
+              >
+              <span>メッシュ・ハイライト</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="hairExtraType"
+                value="毛先だけ"
+              >
+              <span>毛先だけ</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="hairExtraType"
+                value="グラデーション"
+              >
+              <span>グラデーション</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="hairExtraType"
+                value="ツートン"
+              >
+              <span>ツートン</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="hairExtraType"
+                value="その他"
+              >
+              <span>その他</span>
+            </label>
+
+          </div>
+
+
+
+          <div
+            class="conditional-panel"
+            id="extraHairColorPanel"
+            hidden
+          >
+
+            <div class="question-title question-title-small">
+
+              <small>
+                COLOR
+              </small>
+
+              <h4>
+                追加する色
+              </h4>
+
+            </div>
+
+
+            <div
+              class="color-choice-grid"
+              id="extraHairColorGrid"
+            ></div>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             HAIR REFERENCE
+        ================================================== -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              REFERENCE
+            </small>
+
+            <h3>
+              髪型の参考画像
+            </h3>
+
+            <p>
+              「こんな感じ」がある場合だけでOKです。
+            </p>
+
+          </div>
+
+
+          <label class="upload-box">
+
+            <input
+              type="file"
+              id="hairReference"
+              name="hairReference"
+              accept="image/*"
+              multiple
+            >
+
+            <span class="upload-icon">
+              ＋
+            </span>
+
+            <strong>
+              参考画像を追加
+            </strong>
+
+            <small>
+              OPTIONAL
+            </small>
+
+          </label>
+
+
+          <div
+            class="upload-preview-grid"
+            data-preview-for="hairReference"
+          ></div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EYE COLOR
+        ================================================== -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              EYE COLOR
+            </small>
+
+            <h3>
+              目の色
+            </h3>
+
+          </div>
+
+
+          <div
+            class="color-choice-grid"
+            id="eyeColorGrid"
+          ></div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             EYE FEATURE
+        ================================================== -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              EYE FEATURE
+            </small>
+
+            <h3>
+              目の特徴
+            </h3>
+
+            <p>
+              当てはまるものを選んでください。<br>
+              複数選択できます。
+            </p>
+
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input
+                type="checkbox"
+                name="eyeFeature"
+                value="普通"
+              >
+              <span>普通</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="eyeFeature"
+                value="オッドアイ"
+              >
+              <span>オッドアイ</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="eyeFeature"
+                value="キラキラ"
+              >
+              <span>キラキラ</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="eyeFeature"
+                value="ハイライト少なめ"
+              >
+              <span>ハイライト少なめ</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="eyeFeature"
+                value="特殊瞳"
+              >
+              <span>特殊瞳</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="eyeFeature"
+                value="おまかせ"
+              >
+              <span>おまかせ</span>
+            </label>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ODD EYES
+        ================================================== -->
+
+        <section
+          class="conditional-panel"
+          id="oddEyePanel"
+          hidden
+        >
+
+          <div class="question-title">
+
+            <small>
+              HETEROCHROMIA
+            </small>
+
+            <h3>
+              オッドアイの色
+            </h3>
+
+            <p>
+              左右それぞれの色を選んでください。
+            </p>
+
+          </div>
+
+
+
+          <div class="split-color-section">
+
+            <div class="split-color-block">
+
+              <h4>
+                左目
+              </h4>
+
+              <div
+                class="color-choice-grid"
+                id="leftEyeColorGrid"
+              ></div>
+
+            </div>
+
+
+            <div class="split-color-block">
+
+              <h4>
+                右目
+              </h4>
+
+              <div
+                class="color-choice-grid"
+                id="rightEyeColorGrid"
+              ></div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FACE NOTES
+        ================================================== -->
+
+        <section class="question-section">
+
+          <div class="line-field">
+
+            <label for="faceNotes">
+
+              <span>
+                顔・目について細かい希望
+              </span>
+
+              <small>
+                OPTIONAL
+              </small>
+
+            </label>
+
+            <textarea
+              id="faceNotes"
+              name="faceNotes"
+              rows="4"
+              placeholder="例：少しつり目、眠そうな目、八重歯を入れたい など"
+            ></textarea>
+
+          </div>
+
+        </section>
+
+
+        <div class="category-footer"></div>
+
+      </section>
+
+            <!-- =================================================
+           05 DESIGN / NEW
+      ================================================== -->
+
+      <section
+        class="order-screen category-screen"
+        data-category="design"
+        data-route-only="new"
+        id="designScreen"
+      >
+
+        <header class="page-heading page-heading-number">
+
+          <span class="giant-number">05</span>
+
+          <div>
+            <span class="page-kicker">
+              DESIGN
+            </span>
+
+            <h2>
+              この子らしさを決めよう。
+            </h2>
+
+            <p>
+              雰囲気・テイスト・カラー・特徴を
+              組み合わせていきます。
+            </p>
+          </div>
+
+        </header>
+
+
+        <!-- =================================================
+             MOOD
+        ================================================== -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              MOOD
+            </small>
+
+            <h3>
+              雰囲気
+            </h3>
+
+            <p>
+              近いものを選んでください。<br>
+              複数選択できます。
+            </p>
+
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input
+                type="checkbox"
+                name="characterMood"
+                value="かわいい"
+              >
+              <span>かわいい</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="characterMood"
+                value="綺麗・上品"
+              >
+              <span>綺麗・上品</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="characterMood"
+                value="かっこいい"
+              >
+              <span>かっこいい</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="characterMood"
+                value="クール"
+              >
+              <span>クール</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="characterMood"
+                value="元気・明るい"
+              >
+              <span>元気・明るい</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="characterMood"
+                value="ゆるい"
+              >
+              <span>ゆるい</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="characterMood"
+                value="ダーク"
+              >
+              <span>ダーク</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="characterMood"
+                value="中性的"
+              >
+              <span>中性的</span>
+            </label>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DESIGN TASTE
+        ================================================== -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              STYLE
+            </small>
+
+            <h3>
+              デザインテイスト
+            </h3>
+
+            <p>
+              世界観や装飾の方向性を選んでください。
+            </p>
+
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input
+                type="checkbox"
+                name="designTaste"
+                value="和風"
+              >
+              <span>和風</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="designTaste"
+                value="ファンタジー"
+              >
+              <span>ファンタジー</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="designTaste"
+                value="現代風"
+              >
+              <span>現代風</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="designTaste"
+                value="シンプル"
+              >
+              <span>シンプル</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="designTaste"
+                value="装飾多め"
+              >
+              <span>装飾多め</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="designTaste"
+                value="おまかせ"
+                data-exclusive
+              >
+              <span>おまかせ</span>
+            </label>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MAIN COLOR
+        ================================================== -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              MAIN COLOR
+            </small>
+
+            <h3>
+              メインカラー
+            </h3>
+
+            <p>
+              キャラクター全体で使いたい色を
+              <strong>2色まで</strong>選べます。
+            </p>
+
+          </div>
+
+
+          <!--
+            script.jsで生成
+
+            白
+            黒
+            グレー・シルバー
+            赤
+            ピンク
+            オレンジ
+            黄
+            ベージュ・ブラウン
+            黄緑
+            緑
+            ミント
+            水色
+            青
+            ネイビー
+            紫
+            ラベンダー
+            ゴールド
+            その他
+            おまかせ
+          -->
+
+          <div
+            class="color-choice-grid"
+            id="mainColorGrid"
+          ></div>
+
+
+          <p class="field-note">
+            ※「おまかせ」を選んだ場合は、
+            ほかのカラー選択を解除します。
+          </p>
+
+        </section>
+
+
+<!-- =================================================
+     FEATURES / ACCESSORIES / MOTIFS
+================================================== -->
+
+<section class="question-section feature-motif-section">
+
+  <div class="question-title">
+    <small>FEATURES & MOTIFS</small>
+
+    <h3>特徴・アクセサリー・小物</h3>
+
+    <p>
+      入れたいものを選んでください。<br>
+      カテゴリを押すと候補が開きます。
+    </p>
+  </div>
+
+
+  <!-- NONE / OMAKASE -->
+
+  <div class="feature-special-grid">
+
+    <label>
+      <input
+        type="checkbox"
+        name="features"
+        value="なし"
+        data-exclusive
+      >
+      <span>なし</span>
+    </label>
+
+    <label>
+      <input
+        type="checkbox"
+        name="features"
+        value="おまかせ"
+        data-exclusive
+      >
+      <span>おまかせ</span>
+    </label>
+
+  </div>
+
+
+  <!-- ACCORDION -->
+
+  <div class="motif-accordion">
+
+
+    <!-- HEAD / HAIR -->
+
+    <div class="motif-group">
+
+      <button
+        type="button"
+        class="motif-group-button"
+        aria-expanded="false"
+      >
+        <span class="motif-group-icon">✦</span>
+
+        <span class="motif-group-copy">
+          <strong>頭・髪</strong>
+          <small>リボン・帽子など</small>
+        </span>
+
+        <span class="motif-group-arrow">＋</span>
+      </button>
+
+
+      <div class="motif-group-content" hidden>
+
+        <div class="compact-choice-grid">
+
+          <label>
+            <input type="checkbox" name="features" value="リボン">
+            <span>リボン</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="ヘアピン">
+            <span>ヘアピン</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="帽子">
+            <span>帽子</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="王冠・ティアラ">
+            <span>王冠・ティアラ</span>
+          </label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- FACE / EAR -->
+
+    <div class="motif-group">
+
+      <button
+        type="button"
+        class="motif-group-button"
+        aria-expanded="false"
+      >
+        <span class="motif-group-icon">◇</span>
+
+        <span class="motif-group-copy">
+          <strong>顔・耳</strong>
+          <small>メガネ・ピアスなど</small>
+        </span>
+
+        <span class="motif-group-arrow">＋</span>
+      </button>
+
+
+      <div class="motif-group-content" hidden>
+
+        <div class="compact-choice-grid">
+
+          <label>
+            <input type="checkbox" name="features" value="メガネ">
+            <span>メガネ</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="眼帯">
+            <span>眼帯</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="ピアス・イヤリング">
+            <span>ピアス・イヤリング</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="狐面">
+            <span>狐面</span>
+          </label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- NECK -->
+
+    <div class="motif-group">
+
+      <button
+        type="button"
+        class="motif-group-button"
+        aria-expanded="false"
+      >
+        <span class="motif-group-icon">♡</span>
+
+        <span class="motif-group-copy">
+          <strong>首・胸元</strong>
+          <small>チョーカー・ネックレスなど</small>
+        </span>
+
+        <span class="motif-group-arrow">＋</span>
+      </button>
+
+
+      <div class="motif-group-content" hidden>
+
+        <div class="compact-choice-grid">
+
+          <label>
+            <input type="checkbox" name="features" value="チョーカー">
+            <span>チョーカー</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="ネックレス">
+            <span>ネックレス</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="ネクタイ・リボン">
+            <span>ネクタイ・リボン</span>
+          </label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- BODY -->
+
+    <div class="motif-group">
+
+      <button
+        type="button"
+        class="motif-group-button"
+        aria-expanded="false"
+      >
+        <span class="motif-group-icon">○</span>
+
+        <span class="motif-group-copy">
+          <strong>身体</strong>
+          <small>手袋・腕飾りなど</small>
+        </span>
+
+        <span class="motif-group-arrow">＋</span>
+      </button>
+
+
+      <div class="motif-group-content" hidden>
+
+        <div class="compact-choice-grid">
+
+          <label>
+            <input type="checkbox" name="features" value="手袋">
+            <span>手袋</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="腕飾り">
+            <span>腕飾り</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="鈴">
+            <span>鈴</span>
+          </label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- FANTASY -->
+
+    <div class="motif-group">
+
+      <button
+        type="button"
+        class="motif-group-button"
+        aria-expanded="false"
+      >
+        <span class="motif-group-icon">☾</span>
+
+        <span class="motif-group-copy">
+          <strong>ファンタジー</strong>
+          <small>角・羽・天使・悪魔など</small>
+        </span>
+
+        <span class="motif-group-arrow">＋</span>
+      </button>
+
+
+      <div class="motif-group-content" hidden>
+
+        <div class="compact-choice-grid">
+
+          <label>
+            <input type="checkbox" name="features" value="角">
+            <span>角</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="羽・翼">
+            <span>羽・翼</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="天使の輪">
+            <span>天使の輪</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="悪魔系パーツ">
+            <span>悪魔系パーツ</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="天使">
+            <span>天使</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="悪魔">
+            <span>悪魔</span>
+          </label>
+
+          <label>
+            <input type="checkbox" name="features" value="魔法">
+            <span>魔法</span>
+          </label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- NATURE -->
+
+    <div class="motif-group">
+
+      <button
+        type="button"
+        class="motif-group-button"
+        aria-expanded="false"
+      >
+        <span class="motif-group-icon">☼</span>
+
+        <span class="motif-group-copy">
+          <strong>自然・空</strong>
+          <small>月・星・花・海など</small>
+        </span>
+
+        <span class="motif-group-arrow">＋</span>
+      </button>
+
+
+      <div class="motif-group-content" hidden>
+
+        <div class="compact-choice-grid">
+
+          <label><input type="checkbox" name="features" value="月"><span>月</span></label>
+          <label><input type="checkbox" name="features" value="星"><span>星</span></label>
+
+          <label><input type="checkbox" name="features" value="太陽"><span>太陽</span></label>
+          <label><input type="checkbox" name="features" value="夜空"><span>夜空</span></label>
+
+          <label><input type="checkbox" name="features" value="雲"><span>雲</span></label>
+          <label><input type="checkbox" name="features" value="雨"><span>雨</span></label>
+
+          <label><input type="checkbox" name="features" value="雪"><span>雪</span></label>
+          <label><input type="checkbox" name="features" value="海"><span>海</span></label>
+
+          <label><input type="checkbox" name="features" value="水"><span>水</span></label>
+          <label><input type="checkbox" name="features" value="氷"><span>氷</span></label>
+
+          <label><input type="checkbox" name="features" value="炎"><span>炎</span></label>
+          <label><input type="checkbox" name="features" value="雷"><span>雷</span></label>
+
+          <label><input type="checkbox" name="features" value="花"><span>花</span></label>
+          <label><input type="checkbox" name="features" value="桜"><span>桜</span></label>
+
+          <label><input type="checkbox" name="features" value="蝶"><span>蝶</span></label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ITEM / MOTIF -->
+
+    <div class="motif-group">
+
+      <button
+        type="button"
+        class="motif-group-button"
+        aria-expanded="false"
+      >
+        <span class="motif-group-icon">♢</span>
+
+        <span class="motif-group-copy">
+          <strong>モチーフ・小物</strong>
+          <small>宝石・鍵・お菓子など</small>
+        </span>
+
+        <span class="motif-group-arrow">＋</span>
+      </button>
+
+
+      <div class="motif-group-content" hidden>
+
+        <div class="compact-choice-grid">
+
+          <label><input type="checkbox" name="features" value="宝石"><span>宝石</span></label>
+          <label><input type="checkbox" name="features" value="鉱石"><span>鉱石</span></label>
+
+          <label><input type="checkbox" name="features" value="鍵"><span>鍵</span></label>
+          <label><input type="checkbox" name="features" value="十字架"><span>十字架</span></label>
+
+          <label><input type="checkbox" name="features" value="時計"><span>時計</span></label>
+          <label><input type="checkbox" name="features" value="鎖"><span>鎖</span></label>
+
+          <label><input type="checkbox" name="features" value="トランプ"><span>トランプ</span></label>
+          <label><input type="checkbox" name="features" value="お菓子"><span>お菓子</span></label>
+
+          <label><input type="checkbox" name="features" value="フルーツ"><span>フルーツ</span></label>
+          <label><input type="checkbox" name="features" value="ハート"><span>ハート</span></label>
+
+          <label><input type="checkbox" name="features" value="音楽"><span>音楽</span></label>
+          <label><input type="checkbox" name="features" value="ゲーム"><span>ゲーム</span></label>
+
+          <label><input type="checkbox" name="features" value="ぬいぐるみ"><span>ぬいぐるみ</span></label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- JAPANESE -->
+
+    <div class="motif-group">
+
+      <button
+        type="button"
+        class="motif-group-button"
+        aria-expanded="false"
+      >
+        <span class="motif-group-icon">✿</span>
+
+        <span class="motif-group-copy">
+          <strong>和風</strong>
+          <small>扇子・和傘・鳥居など</small>
+        </span>
+
+        <span class="motif-group-arrow">＋</span>
+      </button>
+
+
+      <div class="motif-group-content" hidden>
+
+        <div class="compact-choice-grid">
+
+          <label><input type="checkbox" name="features" value="扇子"><span>扇子</span></label>
+          <label><input type="checkbox" name="features" value="和傘"><span>和傘</span></label>
+
+          <label><input type="checkbox" name="features" value="提灯"><span>提灯</span></label>
+          <label><input type="checkbox" name="features" value="御札"><span>御札</span></label>
+
+          <label><input type="checkbox" name="features" value="鳥居"><span>鳥居</span></label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- OTHER -->
+
+    <div class="motif-group">
+
+      <button
+        type="button"
+        class="motif-group-button"
+        aria-expanded="false"
+      >
+        <span class="motif-group-icon">＋</span>
+
+        <span class="motif-group-copy">
+          <strong>その他</strong>
+          <small>一覧にないもの</small>
+        </span>
+
+        <span class="motif-group-arrow">＋</span>
+      </button>
+
+
+      <div class="motif-group-content" hidden>
+
+        <div class="compact-choice-grid">
+
+          <label>
+            <input type="checkbox" name="features" value="その他">
+            <span>その他</span>
+          </label>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- FREE TEXT -->
+
+  <div class="line-field feature-notes-field">
+
+    <label for="featureNotes">
+
+      <span>
+        特徴・小物についての補足
+      </span>
+
+      <small>
+        OPTIONAL
+      </small>
+
+    </label>
+
+    <textarea
+      id="featureNotes"
+      name="featureNotes"
+      rows="4"
+      placeholder="例：月のモチーフを髪飾りに入れてほしい、ピアスは右耳だけ など"
+    ></textarea>
+  </div>
+
+</section>
+
+
+<!-- 05 DESIGN FOOTER -->
+<div class="category-footer"></div>
+
+<!-- 05 DESIGN END -->
+</section>
+
+
+<!-- =================================================
+     06 OUTFIT / NEW
+================================================== -->
+      <section
+        class="order-screen category-screen"
+        data-category="outfit"
+        data-route-only="new"
+        id="outfitScreen"
+      >
+
+        <header class="page-heading page-heading-number">
+
+          <span class="giant-number">
+            06
+          </span>
+
+          <div>
+
+            <span class="page-kicker">
+              OUTFIT
+            </span>
+
+            <h2>
+              どんな服を着せる？
+            </h2>
+
+            <p>
+              まずは大まかな系統を選んで、
+              必要なら細かいジャンルまで指定できます。
+            </p>
+
+          </div>
+
+        </header>
+
+
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              OUTFIT STYLE
+            </small>
+
+            <h3>
+              衣装の系統
+            </h3>
+
+            <p>
+              性別に合わせておすすめ順を変えますが、
+              どの衣装でも選べます。
+            </p>
+
+          </div>
+
+
+          <!--
+            script.jsで生成
+
+            カジュアル・現代
+            かわいい
+            ダーク・ゴシック
+            制服・ステージ
+            フォーマル・クール
+            和・アジア
+            ファンタジー・近未来
+            その他
+            おまかせ
+          -->
+
+          <div
+            class="category-choice-grid"
+            id="outfitCategoryGrid"
+          ></div>
+
+
+          <button
+            type="button"
+            class="secondary-action-button"
+            id="showAllOutfitButton"
+          >
+            すべての衣装を見る
+          </button>
+
+
+
+          <!-- OUTFIT DETAILS -->
+
+          <div
+            class="detail-selector-panel"
+            id="outfitDetailPanel"
+            hidden
+          >
+
+            <div class="detail-selector-heading">
+
+              <div>
+
+                <small>
+                  DETAIL
+                </small>
+
+                <h4 id="outfitDetailTitle">
+                  衣装の詳細
+                </h4>
+
+              </div>
+
+              <span>
+                詳細は選ばなくてもOK
+              </span>
+
+            </div>
+
+
+            <!--
+              例：
+              カジュアル・現代
+              → カジュアル
+              → ストリート
+              → きれいめ
+              → 韓国風
+              → Y2K
+              → スポーティ
+
+              画像カードはscript.jsで生成
+            -->
+
+            <div
+              class="visual-detail-grid"
+              id="outfitDetailGrid"
+            ></div>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- OUTFIT REFERENCE -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              REFERENCE
+            </small>
+
+            <h3>
+              衣装の参考画像
+            </h3>
+
+            <p>
+              着せたい服に近い画像がある場合は
+              追加してください。
+            </p>
+
+          </div>
+
+
+          <label class="upload-box">
+
+            <input
+              type="file"
+              id="outfitReference"
+              name="outfitReference"
+              accept="image/*"
+              multiple
+            >
+
+            <span class="upload-icon">
+              ＋
+            </span>
+
+            <strong>
+              参考画像を追加
+            </strong>
+
+            <small>
+              OPTIONAL
+            </small>
+
+          </label>
+
+
+          <div
+            class="upload-preview-grid"
+            data-preview-for="outfitReference"
+          ></div>
+
+        </section>
+
+
+
+        <section class="question-section">
+
+          <div class="line-field">
+
+            <label for="outfitNotes">
+
+              <span>
+                衣装についての希望
+              </span>
+
+              <small>
+                OPTIONAL
+              </small>
+
+            </label>
+
+            <textarea
+              id="outfitNotes"
+              name="outfitNotes"
+              rows="5"
+              placeholder="例：袖は長め、露出少なめ、アクセサリー多め など"
+            ></textarea>
+
+          </div>
+
+        </section>
+
+
+        <div class="category-footer"></div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           OUTFIT / EXISTING CHARACTER
+           「衣装変更・新衣装」を選択した時だけ使用
+      ================================================== -->
+
+      <section
+        class="order-screen category-screen"
+        data-category="outfit"
+        data-route-only="existing"
+        data-requires-request="衣装変更・新衣装"
+        id="existingOutfitScreen"
+      >
+
+        <header class="page-heading page-heading-number">
+
+          <span class="giant-number">
+            04
+          </span>
+
+          <div>
+
+            <span class="page-kicker">
+              NEW OUTFIT
+            </span>
+
+            <h2>
+              新しい衣装を決めよう。
+            </h2>
+
+            <p>
+              今のキャラクターデザインを活かしながら、
+              新しい衣装を制作します。
+            </p>
+
+          </div>
+
+        </header>
+
+
+
+        <section
+          class="question-section"
+          id="existingOutfitQuestions"
+        >
+
+          <div class="question-title">
+
+            <small>
+              OUTFIT STYLE
+            </small>
+
+            <h3>
+              希望する衣装
+            </h3>
+
+            <p>
+              近い系統を選んでください。
+            </p>
+
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input
+                type="radio"
+                name="existingOutfitCategory"
+                value="カジュアル・現代"
+              >
+              <span>カジュアル・現代</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="existingOutfitCategory"
+                value="かわいい"
+              >
+              <span>かわいい</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="existingOutfitCategory"
+                value="ダーク・ゴシック"
+              >
+              <span>ダーク・ゴシック</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="existingOutfitCategory"
+                value="制服・ステージ"
+              >
+              <span>制服・ステージ</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="existingOutfitCategory"
+                value="フォーマル・クール"
+              >
+              <span>フォーマル・クール</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="existingOutfitCategory"
+                value="和・アジア"
+              >
+              <span>和・アジア</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="existingOutfitCategory"
+                value="ファンタジー・近未来"
+              >
+              <span>ファンタジー・近未来</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="existingOutfitCategory"
+                value="その他"
+              >
+              <span>その他</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="existingOutfitCategory"
+                value="おまかせ"
+              >
+              <span>おまかせ</span>
+            </label>
+
+          </div>
+
+
+
+          <div class="line-field">
+
+            <label for="existingOutfitDetail">
+
+              <span>
+                衣装の詳しい希望
+              </span>
+
+              <small>
+                OPTIONAL
+              </small>
+
+            </label>
+
+            <textarea
+              id="existingOutfitDetail"
+              name="existingOutfitDetail"
+              rows="5"
+              placeholder="例：黒ベースのストリート系、パーカー、シルバーアクセサリー多め など"
+            ></textarea>
+
+          </div>
+
+
+
+          <div class="question-title question-title-spaced">
+
+            <small>
+              REFERENCE
+            </small>
+
+            <h3>
+              衣装の参考画像
+            </h3>
+
+          </div>
+
+
+          <label class="upload-box">
+
+            <input
+              type="file"
+              id="existingOutfitReference"
+              name="existingOutfitReference"
+              accept="image/*"
+              multiple
+            >
+
+            <span class="upload-icon">
+              ＋
+            </span>
+
+            <strong>
+              参考画像を追加
+            </strong>
+
+            <small>
+              OPTIONAL
+            </small>
+
+          </label>
+
+
+          <div
+            class="upload-preview-grid"
+            data-preview-for="existingOutfitReference"
+          ></div>
+
+        </section>
+
+
+        <div class="category-footer"></div>
+
+      </section>
+
+            <!-- =================================================
+           ILLUSTRATION / COMMON
+      ================================================== -->
+
+      <section
+        class="order-screen category-screen"
+        data-category="illustration"
+        id="illustrationScreen"
+      >
+
+        <header class="page-heading page-heading-number">
+
+          <span class="giant-number">
+            07
+          </span>
+
+          <div>
+            <span class="page-kicker">
+              ILLUSTRATION
+            </span>
+
+            <h2>
+              イラストの希望を教えて。
+            </h2>
+
+            <p>
+              新規・既存どちらの場合も、
+              今回描いてほしい内容を入力してください。
+            </p>
+          </div>
+
+        </header>
+
+
+
+        <!-- DRAWING RANGE -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              DRAWING RANGE
+            </small>
+
+            <h3>
+              描写範囲
+            </h3>
+
+            <p>
+              どこまで描いてほしいか選んでください。
+            </p>
+
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input
+                type="radio"
+                name="drawingRange"
+                value="顔アップ"
+              >
+              <span>顔アップ</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="drawingRange"
+                value="胸上"
+              >
+              <span>胸上</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="drawingRange"
+                value="腰上"
+              >
+              <span>腰上</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="drawingRange"
+                value="膝上"
+              >
+              <span>膝上</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="drawingRange"
+                value="全身"
+              >
+              <span>全身</span>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="drawingRange"
+                value="おまかせ"
+              >
+              <span>おまかせ</span>
+            </label>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- EXPRESSION -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              EXPRESSION
+            </small>
+
+            <h3>
+              表情
+            </h3>
+
+            <p>
+              入れたい表情を選んでください。<br>
+              複数選択できます。
+            </p>
+
+          </div>
+
+
+          <div class="compact-choice-grid">
+
+            <label>
+              <input
+                type="checkbox"
+                name="expression"
+                value="笑顔"
+              >
+              <span>笑顔</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="expression"
+                value="にっこり"
+              >
+              <span>にっこり</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="expression"
+                value="元気"
+              >
+              <span>元気</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="expression"
+                value="クール"
+              >
+              <span>クール</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="expression"
+                value="無表情"
+              >
+              <span>無表情</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="expression"
+                value="照れ"
+              >
+              <span>照れ</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="expression"
+                value="ウインク"
+              >
+              <span>ウインク</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="expression"
+                value="困り顔"
+              >
+              <span>困り顔</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="expression"
+                value="怒り"
+              >
+              <span>怒り</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="expression"
+                value="泣き・涙"
+              >
+              <span>泣き・涙</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="expression"
+                value="その他"
+              >
+              <span>その他</span>
+            </label>
+
+            <label>
+              <input
+                type="checkbox"
+                name="expression"
+                value="おまかせ"
+                data-exclusive
+              >
+              <span>おまかせ</span>
+            </label>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- POSE / EXPRESSION DETAIL -->
+
+        <section class="question-section">
+
+          <div class="line-field">
+
+            <label for="poseRequest">
+
+              <span>
+                ポーズ・表情などの希望
+              </span>
+
+              <small>
+                OPTIONAL
+              </small>
+
+            </label>
+
+            <textarea
+              id="poseRequest"
+              name="poseRequest"
+              rows="5"
+              placeholder="例：片手でピース、少し照れた笑顔、こちらを見る感じ など"
+            ></textarea>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- MUST HAVE -->
+
+        <section class="question-section">
+
+          <div class="line-field">
+
+            <label for="mustHave">
+
+              <span>
+                絶対に入れてほしい要素
+              </span>
+
+              <small>
+                OPTIONAL
+              </small>
+
+            </label>
+
+            <textarea
+              id="mustHave"
+              name="mustHave"
+              rows="5"
+              placeholder="例：右耳のピアス、青いリボン、泣きぼくろは必ず入れてほしい など"
+            ></textarea>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- NG -->
+
+        <section class="question-section">
+
+          <div class="line-field">
+
+            <label for="ngElements">
+
+              <span>
+                入れてほしくない・NG要素
+              </span>
+
+              <small>
+                OPTIONAL
+              </small>
+
+            </label>
+
+            <textarea
+              id="ngElements"
+              name="ngElements"
+              rows="5"
+              placeholder="例：露出が多い衣装、赤色、武器などは避けてほしい など"
+            ></textarea>
+
+          </div>
+
+        </section>
+
+
+
+        <!-- GENERAL REFERENCES -->
+
+        <section class="question-section">
+
+          <div class="question-title">
+
+            <small>
+              REFERENCES
+            </small>
+
+            <h3>
+              その他の参考画像
+            </h3>
+
+            <p>
+              ポーズ・雰囲気・色・小物など、
+              参考にしてほしい画像があれば追加してください。
+            </p>
+
+          </div>
+
+
+          <label class="upload-box">
+
+            <input
+              type="file"
+              id="generalReferences"
+              name="generalReferences"
+              accept="image/*"
+              multiple
+            >
+
+            <span class="upload-icon">
+              ＋
+            </span>
+
+            <strong>
+              参考画像を追加
+            </strong>
+
+            <small>
+              OPTIONAL / MULTIPLE
+            </small>
+
+          </label>
+
+
+          <div
+            class="upload-preview-grid"
+            data-preview-for="generalReferences"
+          ></div>
+
+        </section>
+
+
+
+        <!-- NOTES -->
+
+        <section class="question-section">
+
+          <div class="line-field">
+
+            <label for="notes">
+
+              <span>
+                その他・補足
+              </span>
+
+              <small>
+                OPTIONAL
+              </small>
+
+            </label>
+
+            <textarea
+              id="notes"
+              name="notes"
+              rows="6"
+              placeholder="ここまでの項目にない希望や、伝えておきたいことがあれば自由に入力してください"
+            ></textarea>
+
+          </div>
+
+        </section>
+
+
+        <div class="category-footer"></div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           CONFIRM
+      ================================================== -->
+
+      <section class="order-screen category-screen" data-category="emote" data-route-only="emote" id="emoteScreen">
+<header class="page-heading"><span class="page-kicker">PAID EMOTE</span><h2>有償エモート制作</h2><p>表情・ポーズ・文字などの希望を、まとめて教えてください。</p></header>
+<section class="question-section"><div class="question-title"><h3>制作個数・料金</h3><p>選択した個数の合計料金です。絵柄は複数選べます。</p></div>
+<div class="choice-grid choice-grid-2"><label class="choice-card"><input type="radio" name="emoteCount" value="5"><span><strong>5個</strong><small>1,000円</small></span></label><label class="choice-card"><input type="radio" name="emoteCount" value="10"><span><strong>10個</strong><small>1,800円</small></span></label><label class="choice-card"><input type="radio" name="emoteCount" value="15"><span><strong>15個</strong><small>2,500円</small></span></label></div><p id="emotePrice" class="field-note" aria-live="polite">個数を選んでください。</p></section>
+<section class="question-section"><div class="question-title"><h3>絵柄（複数選択可）</h3><p>見本の①〜④から選んでください。画像を押すと拡大できます。</p><a href="emote-styles.webp" target="_blank" rel="noopener"><img class="emote-style-sample" src="emote-styles.webp" alt="①3D、②2D、③平面、④立体的のエモート見本"></a></div><div class="choice-grid choice-grid-2"><label class="choice-card"><input type="checkbox" name="emoteStyle" value="① 3D（リアル寄り・立体感）"><span><strong>① 3D（リアル寄り・立体感）</strong></span></label><label class="choice-card"><input type="checkbox" name="emoteStyle" value="② 2D（アニメ塗り・高精細）"><span><strong>② 2D（アニメ塗り・高精細）</strong></span></label><label class="choice-card"><input type="checkbox" name="emoteStyle" value="③ 平面（シンプル・デフォルメ）"><span><strong>③ 平面（シンプル・デフォルメ）</strong></span></label><label class="choice-card"><input type="checkbox" name="emoteStyle" value="④ 立体的（ふんわり・ぷっくり）"><span><strong>④ 立体的（ふんわり・ぷっくり）</strong></span></label></div></section>
+<section class="question-section"><div class="line-field"><label for="emoteWishes">希望をまとめて入力 <small class="required">REQUIRED</small></label><textarea id="emoteWishes" name="emoteWishes" rows="8" placeholder="例：笑顔、泣き顔、怒り顔、おつかれ、ありがとう。① 3D（リアル寄り・立体感）で3個、② 2D（アニメ塗り・高精細）で2個。文字やポーズの希望もまとめて記入してください。"></textarea></div></section>
+<section class="question-section"><div class="question-title"><h3>参考画像</h3><p>キャラクターや希望する表情などの画像を添付できます。</p></div><input type="file" id="emoteReference" name="emoteReference" accept="image/*" multiple><div class="upload-preview-grid" data-preview-for="emoteReference" hidden></div></section>
+<section class="question-section"><h3>納品・お支払い</h3><p>納品形式：背景透過PNG<br>支払方法：要相談<br>支払時期：前払い。支払方法を相談し、入金確認後に制作を開始します。</p><label><input type="checkbox" id="emotePaymentAgreement"> 料金・背景透過PNG・支払方法要相談・前払いの条件を確認しました。</label></section>
+<div class="category-footer"></div></section>
+<section
+        class="order-screen category-screen"
+        data-category="confirm"
+        id="confirmScreen"
+      >
+
+        <header class="page-heading page-heading-number">
+
+          <span class="giant-number">
+            ✓
+          </span>
+
+          <div>
+
+            <span class="page-kicker">
+              CONFIRM
+            </span>
+
+            <h2>
+              最後に確認。
+            </h2>
+
+            <p>
+              入力内容に間違いがないか確認してください。
+            </p>
+
+          </div>
+
+        </header>
+
+
+        <section class="question-section">
+
+          <div class="confirm-intro">
+
+            <span class="confirm-icon">
+              ✦
+            </span>
+
+            <div>
+
+              <strong>
+                YOUR ORDER
+              </strong>
+
+              <p>
+                入力した内容をまとめています。
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div
+            class="confirm-content"
+            id="confirmContent"
+          >
+            <!-- script.js で生成 -->
+          </div>
+
+        </section>
+
+
+        <div class="category-footer"></div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           SUBMIT
+      ================================================== -->
+
+      <section
+        class="order-screen"
+        id="submitScreen"
+      >
+
+        <header class="page-heading">
+
+          <span class="page-kicker">
+            SUBMIT
+          </span>
+
+          <h2>
+            この内容で依頼しますか？
+          </h2>
+
+          <p>
+            内容を確認したら、下のチェックを入れて
+            依頼を送信してください。
+          </p>
+
+        </header>
+
+
+
+        <section class="submit-card">
+
+          <div class="submit-card-mark">
+            ✦
+          </div>
+
+          <div class="submit-card-copy">
+
+            <small>
+              FINAL CHECK
+            </small>
+
+            <h3>
+              送信前の確認
+            </h3>
+
+            <p>
+              送信後に発行される受付コードは、
+              依頼内容を確認するときに使用します。
+            </p>
+
+          </div>
+
+        </section>
+
+
+
+        <label class="agreement-box">
+
+          <input
+            type="checkbox"
+            id="orderAgreement"
+          >
+
+          <span class="agreement-check"></span>
+
+          <span>
+
+            <strong>
+              入力内容を確認しました
+            </strong>
+
+            <small>
+              この内容でイラスト制作を依頼します。
+            </small>
+
+          </span>
+
+        </label>
+
+
+
+        <div class="submit-actions">
+
+          <button
+            type="button"
+            class="secondary-button"
+            id="submitBackButton"
+          >
+            ← 修正する
+          </button>
+
+
+          <button
+            type="button"
+            class="primary-button"
+            id="submitOrderButton"
+            disabled
+          >
+            この内容で依頼する
+            <span>→</span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           COMPLETE
+      ================================================== -->
+
+      <section
+        class="order-screen complete-screen"
+        id="completeScreen"
+      >
+
+        <div class="complete-decoration complete-decoration-1">
+          ✦
+        </div>
+
+        <div class="complete-decoration complete-decoration-2">
+          ♡
+        </div>
+
+
+        <div class="complete-content">
+
+          <span class="complete-mark">
+            ✓
+          </span>
+
+
+          <p class="eyebrow">
+            ORDER COMPLETE
+          </p>
+
+
+          <h2>
+            依頼を受け付けました。
+          </h2>
+
+
+          <p class="complete-description">
+            入力ありがとう！<br>
+            内容を確認後、必要に応じてご連絡します。
+          </p>
+
+
+
+          <div class="receipt-card">
+
+            <small>
+              RECEIPT CODE
+            </small>
+
+            <strong id="receiptNumber">
+              --------
+            </strong>
+
+            <p>
+              この受付コードは、
+              あとから依頼内容を確認するときに使います。
+            </p>
+
+          </div>
+
+
+
+          <!--
+            「制作前ヒアリング：希望する」の場合のみ
+            script.jsで表示
+          -->
+
+          <div
+            class="hearing-next"
+            id="hearingNext"
+            hidden
+          >
+
+            <div class="hearing-next-icon">
+              ♡
+            </div>
+
+            <div>
+
+              <small>
+                NEXT STEP
+              </small>
+
+              <h3>
+                制作前ヒアリングを予約
+              </h3>
+
+              <p>
+                ヒアリング希望を選択しているため、
+                続けて面談予約へ進めます。
+              </p>
+
+            </div>
+
+
+            <button
+              type="button"
+              class="primary-button"
+              id="hearingBookingButton"
+            >
+              面談予約へ進む
+              <span>→</span>
+            </button>
+
+          </div>
+
+
+
+          <button
+            type="button"
+            class="complete-home-button"
+            data-home-link
+          >
+            TOPへ戻る
+          </button>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- =================================================
+           LOOKUP
+      ================================================== -->
+
+      <section
+        class="order-screen lookup-screen"
+        id="lookupScreen"
+      >
+
+        <header class="page-heading">
+
+          <span class="page-kicker">
+            ORDER LOOKUP
+          </span>
+
+          <h2>
+            依頼内容を確認
+          </h2>
+
+          <p>
+            送信時に発行された受付コードを入力してください。
+          </p>
+
+        </header>
+
+
+
+        <section class="lookup-card">
+
+          <div class="line-field">
+
+            <label for="lookupCode">
+
+              <span>
+                受付コード
+              </span>
+
+            </label>
+
+
+            <input
+              type="text"
+              id="lookupCode"
+              inputmode="text"
+              autocomplete="off"
+              placeholder="例：ONE-123456"
+            >
+
+          </div>
+
+
+
+          <button
+            type="button"
+            class="primary-button lookup-button"
+            id="lookupButton"
+          >
+            依頼内容を確認する
+            <span>→</span>
+          </button>
+
+
+
+          <div
+            class="lookup-result"
+            id="lookupResult"
+            aria-live="polite"
+          ></div>
+
+        </section>
+
+
+
+        <button
+          type="button"
+          class="secondary-button lookup-back-button"
+          id="lookupBackButton"
+        >
+          ← TOPへ戻る
+        </button>
+
+      </section>
+
+
+
+      <!-- =================================================
+           TOAST
+      ================================================== -->
+
+      <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+      ></div>
+
+
+    </form>
+
+  </main>
+
+</div>
+
+
+</body>
+</html>
+
